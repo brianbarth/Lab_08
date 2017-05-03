@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Brian_Barth_Lab07</title>
+	<script type="text/javascript" src="resources/scripts/orderForm.js"></script>
+	<link href="resources/css/orderForm.css" type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+<body>
+	<h1>Order Form</h1>
+	<div class="navigation">
+		<a class="navBar" href="index.html">Home</a>
+		<a class="navBar" href="cart.html">Cart</a>
+	</div>
+	
+	<div id="smallBox">           <!--HERE I AM -->
+		<p class="rightJustify"></p>
+		<div id="smallerBox"></div>
+		<div id="orderCost"></div>
+	</div>
+
+	<div id="reallyBigBox">
+		<form action="https://suchnull.com/examples/echo" method="post" onsubmit="return validate()">	
+			<div class="errorBox" id="errorBox"></div>
+			<div class="shipping">								
+				<p class="infoFont">Shipping Information</p>				
+				<table>
+					<tr>
+						<td>First Name:</td>
+						<td><input type="text" name="fname" id="fname"></td>
+					</tr>
+					<tr>
+						<td>Last Name:</td>
+						<td><input type="text" name="lname" id="lname"></td>
+					</tr>
+					<tr>
+						<td>Shipping Address:</td>
+						<td><input type="text" name="saddress" id="saddress"></td>
+					</tr>
+					<tr>
+						<td>Shipping City:</td>
+						<td><input type="text" name="scity" id="scity"></td>
+					</tr>
+					<tr>
+						<td>Shipping State:</td>
+						<td><input type="text" name="sstate" id="sstate"></td>
+					</tr>
+					<tr>
+						<td>Shipping Zip Code:</td>
+						<td><input type="text" name="szip" id="szip"></td>
+					</tr>					
+						<tr id="sameCheck">				
+							<td colspan="2">
+								<label>
+									<input type="checkbox" name="checkbox" id="checkbox" onclick="fillBilling(this.form)">
+										<span class="italic">Check this box if shipping address and billing address are the same.</span>
+								</label>
+							</td>
+						</tr>					
+				</table>				
+			</div> <!--shipping-->
+			<div class="billing">
+					<p class="infoFont">Billing Information</p>	
+					<table>
+						<tr>
+							<td>Billing Address:</td>
+							<td><input type="text" name="baddress" id="baddress"></td>
+						</tr>
+						<tr>
+							<td>Billing City:</td>
+							<td><input type="text" name="bcity" id="bcity"></td>
+						</tr>
+						<tr>
+							<td>Billing State:</td>
+							<td><input type="text" name="bstate" id="bstate"></td>
+						</tr>
+						<tr>
+							<td>Billing Zip Code:</td>
+							<td><input type="text" name="bzip" id="bzip"></td>
+						</tr>
+						<tr>
+							<td>CC Type:</td>
+							<td>
+								<select name="cctype" id="cctype">
+									<option value="visa">Visa</option>
+									<option value="masterCard">Master Card</option>
+									<option value="americanExpress">American Express</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>CC Number:</td>
+							<td><input type="text" maxlength="16" name="ccnumber" id="ccnumber">
+						</tr>
+						<tr>
+							<td>CC Expiration Date:</td>
+							<td><input type="text" placeholder="00/00" name="ccdate" id="ccdate">						
+						</tr>				
+					</table>
+						<div class="sendButtons">
+							<input type="submit" name="submit" value="Submit Order" id="submit"><input type="reset" name="reset" value="Clear" id="reset" onclick="checkField()">
+						</div>							
+			</div> <!-- Billing -->
+			<input type="hidden" id="items" name="items">
+		</form>	
+	</div> <!--really bigBox -->
+</body>
+</html>

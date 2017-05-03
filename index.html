@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brian_Barth_Lab_08</title>
+    <link href="resources/css/default.css" rel="stylesheet" type="text/css">
+    <script src="resources/scripts/products.js" type="text/javascript" charset="utf-8"></script>
+    <script src="resources/scripts/addItem.js" type="text/javascript" charset="utf-8"></script>
+    <script src="resources/scripts/index.js" type="text/javascript" charset="utf-8"></script>    
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  </head>
+  <body>
+    <form action="#" method="post">
+      <nav>
+        <p id="roboMessage">Click on robot pup image for description!</p>
+        <ul>
+          <li><a href ="cart.html">Cart</a>
+        </ul>
+      </nav>
+      <header>
+        <h1>Get some robot puppies!</h1>
+      </header> 
+      <main> 
+     <!-- <div id="products"></div> -->
+
+        <div class="picBox">    
+          <a href="details.html?product=0"><img src="resources/images/pup1.jpg" alt="A white puppy" id="img1"></a>
+          <input type="button" class="button" id="button1" value="Add to Cart" onclick="addItemToCart(0)"> 
+        </div>
+
+        <div class="picBox">
+          <a href="details.html?product=1"><img src="resources/images/pup2.jpg" alt="A brown and white furry puppy" id="img2"></a>
+          <input type="button" class="button" id="button2" value="Add to Cart" onclick="addItemToCart(1)">
+        </div>
+
+        <div class="picBox">
+          <a href="details.html?product=2"><img src="resources/images/pup3.jpg" alt="A brown and black  puppy" id="img3"></a>
+          <input type="button" class="button" id="button3" value="Add to Cart" onclick="addItemToCart(2)"> 
+        </div>
+
+        <div class="picBox">    
+          <a href="details.html?product=3"><img src="resources/images/pup4.jpg" alt="A brown puppy" id="img4"></a>
+          <input type="button" class="button" id="button4" value="Add to Cart" onclick="addItemToCart(3)">
+        </div>
+
+        <div class="picBox">
+          <a href="details.html?product=4"><img src="resources/images/pup5.jpg" alt="A German Sheppard puppy" id="img5"></a>
+          <input type="button" class="button" id="button5" value="Add to Cart" onclick="addItemToCart(4)">
+        </div>
+
+        <div class="picBox">
+          <a href="details.html?product=5"><img src="resources/images/pup6.jpg" alt="A Husky puppy" id="img6"></a>
+          <input type="button" class="button" id="button6" value="Add to Cart" onclick="addItemToCart(5)">
+        </div>
+
+      </main>
+    </form>
+  </body>
+</html>

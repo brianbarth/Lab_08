@@ -1,0 +1,213 @@
+/* details.html stylesheet */
+
+html {
+  font-size: 18px;
+}
+body {
+  background-color: rgb(193, 181, 152);
+  font-family: 'Indie Flower', cursive;
+}
+span {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2.5rem;
+	color: rgb(135, 107, 181);
+	font-weight: 700;
+
+}
+p {
+	font-size: 1.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid blue;*/
+}
+nav {
+  background-color: rgb(135, 107, 181);
+  height: 3.5rem;
+  max-width: 80%;
+  margin: 1rem auto;
+  border-radius: 20px;
+  text-shadow: 2px 2px 1px black;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.15rem;
+  border: solid rgb(255, 223, 140) 2px;
+  border-radius: 10px;
+  padding: .15rem .3rem .15rem .3rem;
+  background-color:  rgba(111, 70, 185, 0.9);
+}
+li {
+  list-style: none;
+  padding-right: 1rem;
+}
+header {
+  height: 6rem;
+  max-width: 80%;
+  margin: auto;
+  background-color: rgb(255, 223, 140);
+  line-height: 6rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+header h1 {
+	text-align: center;
+	padding-left: 1rem;
+}
+header h1:first-letter {
+  font-size: 5rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+  margin: 1rem;
+}
+main {
+	max-width: 75%;
+	margin: auto;
+}
+#clone {
+	font-size: 2rem;
+	padding: 1rem;
+	text-align: center;
+	font-family: Georgia, sans-serif;
+	border-bottom: solid 5px rgb(135, 107, 181);
+	margin-bottom: 1rem;
+}
+.picBox {
+  width: 80%;
+  min-height: 12rem;
+  margin: auto;
+  border-bottom: solid 2px rgb(135, 107, 181);
+}
+#redMessage {
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+.smallBox {
+	max-width: 20rem;
+	float: left;
+	margin: 0.25rem .5rem 2rem 0;	
+}
+#product_price {
+  text-align: center;
+  font-family: 'Cousine', sans-serif;
+}
+#product_image {
+  max-width: 100%;
+}
+#product_description {
+	display: inline;
+	vertical-align: top;
+	clear: both;
+}
+#product_not_found p {
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+}
+.cost {
+	color: black;
+	display: inline-block;
+	font-size: 1.80rem;
+	vertical-align: 4rem;
+	width: 8rem;
+	margin: auto;
+	font-family: 'Cousine', monospace;
+	float: left;
+	text-align: center;
+}
+img {
+	float: left;
+  width: 6rem;
+  margin-left: 0.5rem;
+  border: .5rem ridge rgba(66, 147, 205, 0.5);
+}
+input {
+  margin-bottom: 0;
+}
+.button {
+  width: 7rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  background-color: rgba(255, 83, 67, 0.5);
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 4px 4px 6px #888;
+  border: solid 5px rgb(135, 107, 181);
+  text-shadow: 2px 1px 1px rgb(255, 223, 140);
+  float: left;
+  transition: color .25s linear;
+}
+.button:hover {
+  color: rgb(255, 223, 140);
+  text-shadow: 2px 1px 1px black;
+}
+@media only screen and (max-width: 1694px) {
+	#clone {
+	font-size: 1.25rem;
+	padding: 1rem;
+	text-align: center;
+	font-family: Georgia, sans-serif;
+	}
+	span {
+		font-size: 1.25rem;
+	}	
+}
+@media only screen and (max-width: 950px) {
+	header {
+		font-size: .75rem;
+	}
+	header h1 {
+		margin-left: -1.5rem;
+	}
+}
+@media only screen and (max-width: 540px) {
+	#clone {
+		font-size: 1rem;
+	}
+	span {
+		font-size: 1rem;
+		font-family: Georgia, sans-serif;
+	}
+	header h1:first-letter {
+		font-size: 1.5rem;	
+	  padding: 0 .5rem 0 .5rem;
+	  margin: .15rem;
+	}
+	.picBox {
+		margin-top: 1rem;
+	}
+}
+@media only screen and (max-width: 386px) {
+	header {
+		line-height: inherit;
+	}
+	header h1 {
+		padding-top: .5rem;
+	}
+	nav a {
+  text-decoration: underline;
+  color: white;
+  font-size: 1.15rem;
+  border: none;
+  padding: 0;
+  background-color:  inherit;
+  font-size: 1rem;
+  }
+  ul {
+    padding: 0;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+  }
+}

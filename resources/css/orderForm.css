@@ -1,0 +1,158 @@
+/*order_form style sheet*/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 18px;
+}
+body {
+  background-color: rgb(193, 181, 152);
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+	height: 160px;
+	font-size: 60px;
+	text-align: center;
+	line-height: 160px;
+	text-shadow: 4px 4px 8px darkgreen;
+	background-color: rgb(255, 223, 140);
+	max-width: 80%;
+	margin: 1rem auto;
+	border-radius: 20px;
+}	
+h1:first-letter {
+  font-size: 5rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+  margin: .5rem;
+}	
+.navigation {
+	height: 3.5rem;
+	background-color: rgb(135, 107, 181);
+	max-width: 80%;
+  margin: 1rem auto;
+  border-radius: 20px;
+  text-shadow: 2px 2px 1px black;
+}
+
+a.navBar {
+	float: right;
+	margin: 10px;
+	font-size: 14px;
+	color: black;
+	border: solid rgb(255, 223, 140) 2px;
+  border-radius: 10px;
+	padding: .15rem .3rem .15rem .3rem;
+	color: white;
+  font-size: 1.15rem;	
+	background-color:  rgba(111, 70, 185, 0.9);
+	text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.15rem;
+  border: solid rgb(255, 223, 140) 2px;
+  border-radius: 10px;
+  padding: .15rem .3rem .15rem .3rem;
+  background-color:  rgba(111, 70, 185, 0.9);
+}
+#smallBox {
+	background-color: rgb(255, 223, 140);
+	max-width: 80%;
+	margin: auto;
+	border-radius: 20px;
+	color: black;
+	font-size: 1.5rem;
+	padding: 20px;
+}
+p.rightJustify {
+	max-width: 510px;
+	margin: auto;
+	text-align: center;
+}
+a {
+	color: lightblue;
+}
+#smallerBox {
+	margin: 20px;
+}
+#costMessage {
+	font-family: Georgia, sans-serif;
+	text-align: center;
+}
+#orderCost {
+	margin: 20px 0 0 20px;
+}
+.billing, .shipping {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+td {
+	width: 300px;
+	padding-left: 40px;
+}
+.sendButtons {
+	margin: 40px 0 0 40px;
+}
+input#submit {
+	margin-right: 30px;
+	font-size: 1rem;
+	padding: .25rem;
+	background-color: rgba(255, 83, 67, 0.5);
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px #888;
+  border: solid 5px rgb(135, 107, 181);
+  text-shadow: 2px 1px 1px rgb(255, 223, 140);
+  transition: color .25s linear;
+}
+input#submit:hover {
+  color: rgb(255, 223, 140);
+  text-shadow: 2px 1px 1px black;
+}
+input#reset {
+	margin-right: 30px;
+	font-size: 1rem;
+	padding: .25rem;
+	background-color: rgba(255, 83, 67, 0.5);
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px #888;
+  border: solid 5px rgb(135, 107, 181);
+  text-shadow: 2px 1px 1px rgb(255, 223, 140);
+  transition: color .25s linear;
+}
+input#reset:hover {
+  color: rgb(255, 223, 140);
+  text-shadow: 2px 1px 1px black;
+}
+#reallyBigBox {
+	background-color: white;
+	max-width: 80%;
+	margin: 1rem auto;
+	height: 500px;
+	padding: 10px 40px 40px 40px;
+	border-radius: 20px;
+}
+p.infoFont {
+	font-weight: bold;
+	color: blue;
+	text-decoration: underline;
+}
+.italic {
+	font-style: italic; 
+	font-size: 14px;
+}
+#errorBox {
+	color: red;
+	font-size: 26px;
+	font-weight: bold;
+	background-color: black;
+	text-align: center;
+}
+input {
+	border-color: #999;
+}
+

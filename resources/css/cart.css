@@ -1,0 +1,183 @@
+/* cart.html stylesheet */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 18px;
+}
+img {
+  width: 4rem;
+  padding: 1rem;
+}
+main {
+  max-width: 80%;
+  background-color: white;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+#bigBox {
+  max-width: 80%;
+  margin: auto;
+  margin-top: -4rem;
+  padding-bottom: 2.5rem; 
+}
+#quantity {
+ 
+}
+#itemImage {
+  width: 17rem; 
+}
+#itemImage img{
+  width: 25%;
+  display: inline;
+  margin-left: .5rem;
+}
+.removeButton {
+  display: inline-block;
+  width: 7rem;
+  height: 2rem;
+  margin: 2.5rem 0 0 1.5rem;
+  vertical-align: top;
+  background-color: rgba(255, 83, 67, 0.5);
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 4px 4px 6px #888;
+  border: solid 5px rgb(135, 107, 181);
+  text-shadow: 2px 1px 1px rgb(255, 223, 140);
+  transition: color .25s linear;
+}
+.removeButton:hover {
+  color: rgb(255, 223, 140);
+  text-shadow: 2px 1px 1px black;
+}
+.gotoSubmit {
+  display: inline-block;
+  width: 10rem;
+  margin: auto;
+  height: 2rem;
+  margin: 2.5rem 0 0 1.5rem;
+  vertical-align: top;
+  background-color: rgba(255, 83, 67, 0.5);
+  border-radius: 10px;
+  font-size: 1rem;
+  box-shadow: 4px 4px 6px #888;
+  border: solid 5px rgb(135, 107, 181);
+  text-shadow: 2px 1px 1px rgb(255, 223, 140);
+  transition: color .25s linear;
+}
+.gotoSubmit:hover {
+  color: rgb(255, 223, 140);
+  text-shadow: 2px 1px 1px black;
+}
+#cartPrice {
+  max-width: 10rem;
+  font-size: 1.5rem;
+  font-color: black;
+  font-family: Georgia, sans-serif;
+  margin: -1rem 0 0 1rem;
+}
+#message {
+  max-width: 80%;
+  margin: auto;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem;
+  color: red;
+  font-weight: 700;
+}
+#totalCost {
+  font-family: Georgia, sans-serif;
+  font-size: 1.5rem;
+  border-top: black 6px ridge;
+  margin: 1rem 0 0 1rem;  
+}
+
+body {
+  background-color: rgb(193, 181, 152);
+  font-family: 'Indie Flower', cursive;
+}
+nav {
+  background-color: rgb(135, 107, 181);
+  height: 3.5rem;
+  max-width: 80%;
+  margin: 1rem auto;
+  border-radius: 20px;
+  text-shadow: 2px 2px 1px black;
+}
+ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.15rem;
+  border: solid rgb(255, 223, 140) 2px;
+  border-radius: 10px;
+  padding: .15rem .3rem .15rem .3rem;
+  background-color:  rgba(111, 70, 185, 0.9);
+}
+li {
+  list-style: none;
+  padding-right: 1rem;
+}
+header {
+  height: 6rem;
+  max-width: 80%;
+  margin: auto;
+  background-color: rgb(255, 223, 140);
+  text-align: center;
+  line-height: 6rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}
+header h1:first-letter {
+  font-size: 5rem;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  padding: 0 1rem 0 1rem;
+  margin: .5rem;
+}
+@media only screen and (max-width: 540px) {
+  span {
+    font-size: 1rem;
+    font-family: Georgia, sans-serif;
+  }
+  header h1:first-letter {
+    font-size: 2.5rem;  
+    padding: 0 .5rem 0 .5rem;
+    margin: .15rem;
+  } 
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 386px) {
+  header {
+    line-height: inherit;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header h1:first-letter {
+    font-size: 1.5rem;
+  }
+  nav a {
+  text-decoration: underline;
+  color: white;
+  font-size: 1.15rem;
+  border: none;
+  background-color:  inherit;
+  font-size: 1rem;
+  }
+  ul {
+    padding: 0;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+  }
+}
